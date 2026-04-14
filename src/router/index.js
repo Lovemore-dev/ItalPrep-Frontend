@@ -6,12 +6,12 @@ const routes = [
   {
     path: "/",
     name: "home",
-    Component: HomeView,
+    component: HomeView,
   },
   {
     path: "/content/:slug", //slug matching the slug from backend
-    name: "content-deatail",
-    Component: ContentView,
+    name: "content-detail",
+    component: ContentView,
   },
 ];
 
