@@ -47,21 +47,21 @@ onMounted(async () => {
 
 <style scoped>
 .content-detail {
-    padding: 20px;
-    max-width: 900px;
+    padding: 56px 0;
+    width: min(900px, calc(100% - 40px));
     margin: 0 auto;
 }
 
 .back-btn {
     display: inline-block;
     margin-bottom: 20px;
-    color: #42b983;
+    color: var(--accent-strong);
     text-decoration: none;
 }
 
 .badge {
-    background: #e2f3ec;
-    color: #42b983;
+    background: rgba(34, 211, 238, .1);
+    color: var(--cyan);
     padding: 4px 12px;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -77,9 +77,9 @@ onMounted(async () => {
 
 .term-card {
     padding: 20px;
-    border: 1px solid #eee;
+    border: 1px solid var(--border);
     border-radius: 12px;
-    background: white;
+    background: var(--surface);
     transition: transform 0.2s;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
@@ -90,21 +90,21 @@ onMounted(async () => {
 
 .italian {
     font-weight: bold;
-    color: #2c3e50;
+    color: var(--text);
     font-size: 1.25rem;
     margin-bottom: 5px;
 }
 
 .english {
-    color: #666;
+    color: var(--muted);
     font-style: italic;
     margin-bottom: 10px;
 }
 
 .extra {
     font-size: 0.85rem;
-    color: #999;
-    border-top: 1px solid #eee;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
     padding-top: 10px;
 }
 </style>

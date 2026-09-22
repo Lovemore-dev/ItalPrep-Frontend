@@ -57,16 +57,16 @@ const isFlipped = ref(false)
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    border: 2px solid #eee;
+    border: 1px solid var(--border);
     padding: 20px;
 }
 
 .card-front {
-    background: white;
+    background: var(--surface);
 }
 
 .card-back {
-    background: #42b983;
+    background: linear-gradient(135deg, var(--accent), #4f46e5);
     color: white;
     transform: rotateY(180deg);
 }
